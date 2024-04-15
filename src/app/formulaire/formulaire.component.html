@@ -1,16 +1,38 @@
 <p>formulaire works!</p>
+<br>
+<br>
+<div class="container">
 <form [formGroup]="formresidence">
-    <div>
-<label>Id:</label>
-<input type="text" formControlName="id">
+    <div class="input-group">
+        <div class="input-group-prepend">
+<span class="input-group-text" >Id: </span>
+        </div>
+<input type="text" class="form-control" formControlName="id">
+<div *ngIf="formresidence.get('id')?.hasError('pattern')"class="alert alert-danger">
+id in [1-9]
+</div>
     </div>
-    <div>
-        <label>name:</label>
-        <input type="text" formControlName="name">
+
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text" >Name: </span>
+                    </div>
+        <input type="text" class="form-control" formControlName="name">
+        <div *ngIf="name!.invalid && name!.touched && name?.errors?.['minlength']" class="alert alert-danger">
+            name is valid
+            </div>
     </div>
-    <div>
-        <label>Address:</label>
-        <input type="text" formControlName="address">
+
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text" >Address: </span>
+                    </div>
+        <input type="text" class="form-control" formControlName="address">
+        <div *ngIf="formresidence.get('address')!.invalid && formresidence.get('address')!.touched && formresidence.get('address')?.hasError('pattern') " class="alert alert-danger">
+            address invalid
+            </div>
     </div>
-    <input type="submit" (click)="add()">
+
+    <input type="submit" class="btn btn-primary" (click)="add()" [disabled]="formresidence.invalid">
 </form>
+</div>

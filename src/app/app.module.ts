@@ -13,7 +13,8 @@ import { AppRoutingModule } from './app.routing.module';
 import { AnnonceComponent } from './annonce/annonce.component';
 import { AnnoceModule } from './annonce/annoce.module';
 import { FormulaireComponent } from './formulaire/formulaire.component';
-
+import{HttpClientModule} from '@angular/common/http';
+import { AppartmentComponent } from './appartment/appartment.component'
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { FormulaireComponent } from './formulaire/formulaire.component';
     HomeComponent,
     NotfoundComponent,
     FormulaireComponent,
+    AppartmentComponent,
    
   ],
   imports: [
@@ -32,7 +34,8 @@ import { FormulaireComponent } from './formulaire/formulaire.component';
     FormsModule,
     AppRoutingModule,
     AnnoceModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

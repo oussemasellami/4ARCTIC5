@@ -1,0 +1,11 @@
+<div *ngFor="let i of listappart" class="card" style="width: 18rem">
+  <img [src]="i.residence.image" class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h5 class="card-title">{{ i.residence.name }}</h5>
+    <p class="card-text">
+      {{ i.appartNum }}
+    </p>
+    <a href="#" class="btn btn-primary">Update</a>
+    <a href="#" class="btn btn-danger">Delete</a>
+  </div>
+</div>

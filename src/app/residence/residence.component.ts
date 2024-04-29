@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Residence } from '../models/residence';
 import { Apartment } from '../models/apartment';
+import { AppartmentService } from '../service/appartment.service';
 
 @Component({
   selector: 'app-residence',
@@ -8,6 +9,10 @@ import { Apartment } from '../models/apartment';
   styleUrls: ['./residence.component.css']
 })
 export class ResidenceComponent {
+
+  constructor(private appartmentService:AppartmentService){
+
+  }
   searchsurface!:number
   listResidences:Residence[]=[
     {id:1,"name": "El fel","address":"Borj Cedria", "image":"../../assets/images/residence1.jpg"},
@@ -21,7 +26,10 @@ export class ResidenceComponent {
     {id:2,"appartNum":2,"floorNum":1,"surface":130,"terrace":"non","surfaceTerrace":0,"category":"S+2","description":"Appartement S+2","residence":this.listResidences[0] },
     {id:3,"appartNum":3,"floorNum":2,"surface":150,"terrace":"oui","surfaceTerrace":30,"category":"S+3","description":"Appartement S+3","residence":this.listResidences[1] },]
   
-
+    somme!:number
+show(){
+  this.somme=this.appartmentService.getnumber(this.listApartments,"floorNum",1)
+}
   
 
 }

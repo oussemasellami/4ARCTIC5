@@ -1,21 +1,37 @@
 {
-    "appartement": [
-        {
-          "id": 1,
-          "appartNum": "251",
-          "floorNum": 44,
-          "surface": "55",
-          "terrace": "yes",
-          "surfaceTerrace": "",
-          "category": "test",
-          "description": "Consectetur perfere",
-          "residence": {
-            "id": 1,
-            "name": "El fel",
-            "address": "Borj Cedria",
-            "image": "../../assets/images/residence1.jpg"
-          }
-        }
-       
-      ]
+  "appartement": [
+    {
+      "appartNum": "55",
+      "description": "bonjour",
+      "residence": {
+        "id": 1,
+        "name": "El fel",
+        "address": "Borj Cedria",
+        "image": "../../assets/images/residence1.jpg"
+      },
+      "id": "1"
+    },
+    {
+      "appartNum": "55",
+      "description": "bonjour",
+      "residence": {
+        "id": 1,
+        "name": "El fel",
+        "address": "Borj Cedria",
+        "image": "../../assets/images/residence1.jpg"
+      },
+      "id": "2"
+    },
+    {
+      "id": "3bb7",
+      "appartNum": "123",
+      "description": "hhhhhhhhhhh",
+      "residence": {
+        "id": 1,
+        "name": "El fel",
+        "address": "Borj Cedria",
+        "image": "../../assets/images/residence1.jpg"
+      }
+    }
+  ]
 }

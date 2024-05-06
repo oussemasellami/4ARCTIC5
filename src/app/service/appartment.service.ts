@@ -33,7 +33,11 @@ export class AppartmentService {
     return this.http.delete<Apartment[]>('http://localhost:3000/appartement'+'/'+id)
   }
 
-  updateappart(appart:Apartment,id:any):Observable<Apartment[]>{
+  updateappart(id:any,appart:Apartment):Observable<Apartment[]>{
     return this.http.put<Apartment[]>('http://localhost:3000/appartement'+'/'+id,appart)
+  }
+
+  getbyidappart(id:any):Observable<Apartment[]>{
+    return this.http.get<Apartment[]>('http://localhost:3000/appartement'+'/'+id)
   }
 }

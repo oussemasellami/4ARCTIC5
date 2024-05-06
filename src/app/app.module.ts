@@ -14,7 +14,10 @@ import { AnnonceComponent } from './annonce/annonce.component';
 import { AnnoceModule } from './annonce/annoce.module';
 import { FormulaireComponent } from './formulaire/formulaire.component';
 import{HttpClientModule} from '@angular/common/http';
-import { AppartmentComponent } from './appartment/appartment.component'
+import { AppartmentComponent } from './appartment/appartment.component';
+import { UpdateappartComponent } from './updateappart/updateappart.component';
+import { AddappartComponent } from './addappart/addappart.component';
+import { ManipulationComponent } from './manipulation/manipulation.component'
 
 
 @NgModule({
@@ -27,6 +30,9 @@ import { AppartmentComponent } from './appartment/appartment.component'
     NotfoundComponent,
     FormulaireComponent,
     AppartmentComponent,
+    UpdateappartComponent,
+    AddappartComponent,
+    ManipulationComponent,
    
   ],
   imports: [

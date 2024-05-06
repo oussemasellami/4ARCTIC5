@@ -1,0 +1,15 @@
+<p>manipulation works!</p>
+<app-appartment
+  #appart
+  [s]="m"
+  (additems)="additemparent($event)"
+></app-appartment>
+{{ appart.var1 }}
+
+<ul *ngFor="let i of items">
+  <li>
+    {{ i }}
+  </li>
+</ul>
+
+<button (click)="showView()">showViewChild</button>

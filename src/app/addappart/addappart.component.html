@@ -1,0 +1,30 @@
+<p>addappart works!</p>
+
+<br />
+<br />
+<div class="container">
+  <form [formGroup]="formappart">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Appart Num </span>
+      </div>
+      <input type="text" class="form-control" formControlName="appartNum" />
+    </div>
+
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Description: </span>
+      </div>
+      <input type="text" class="form-control" formControlName="description" />
+    </div>
+
+    <div class="input-group" hidden>
+      <div class="input-group-prepend">
+        <span class="input-group-text">residence: </span>
+      </div>
+      <input type="text" class="form-control" formControlName="residence" />
+    </div>
+
+    <input type="submit" class="btn btn-primary" (click)="add()" />
+  </form>
+</div>

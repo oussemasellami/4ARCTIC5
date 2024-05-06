@@ -6,12 +6,18 @@ import { ResidenceComponent } from './residence/residence.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
 import { AppartmentComponent } from './appartment/appartment.component';
+import { UpdateappartComponent } from './updateappart/updateappart.component';
+import { AddappartComponent } from './addappart/addappart.component';
+import { ManipulationComponent } from './manipulation/manipulation.component';
 
 const ROUTES:Routes=[
   {path:"",redirectTo:"residence",pathMatch:"full"},
   {path:"home",component:HomeComponent},
   {path:"residence",component:ResidenceComponent},
   {path:"appartment",component:AppartmentComponent},
+  {path:"manipulation",component:ManipulationComponent},
+  {path:"add",component:AddappartComponent},
+  {path:"update/:id",component:UpdateappartComponent},
   {path:"formulaire",component:FormulaireComponent}
  // {path:"**",component:NotfoundComponent}
 ]
